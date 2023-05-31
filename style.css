@@ -1,0 +1,312 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;   
+}
+
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color:blanchedalmond;
+    
+
+}
+
+
+.QuoteText,.QuoteAuthor{
+    position: absolute;
+    color:rgb(4,4,4);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: whitesmoke;
+    font-weight: 700;
+}
+
+.QuoteText{
+    padding:.5rem; 
+    font-size: 3rem;
+    top:30%;
+    left:10%; 
+    max-width: 90%;
+    overflow-wrap:break-word; 
+}
+
+.QuoteAuthor{
+    font-size:2rem;
+    left:70%;
+    top:60%; 
+}
+
+body{
+    background-color: rgb(0,0,0);
+    min-height: 200dvh;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.chandragiri-image{
+    width: 100%;
+    height: 100dvh;
+    background-image: url("image2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.gradient{
+   height: 100dvh;
+   width:100%;
+   background-image: linear-gradient(to bottom, rgb(0, 20, 0,0.2),rgb(49,54,57,0.5),rgb(0,0,0,1));
+   position: absolute;
+   top:0;
+   left:0;
+   
+}
+
+.stripes{
+    width: 135px;
+    height:100dvh;
+    position:relative;
+    left:17.9%;
+    margin:0;
+    padding:0;
+}
+
+.s1{
+    position: absolute;
+    width:29.63%;
+    height:0%;
+    background:antiquewhite;
+    left:0%;
+    animation: dropStrip 1.5s linear forwards;
+    animation-delay: 0.2s;
+}
+.s2{
+    position:absolute;
+    width: 85.18%;
+    height: 0%;
+    background: #FF5045;
+    left:0%;
+    z-index: -2;
+    animation: dropStrip 1.5s linear forwards;
+    animation-delay:0.3s;
+
+}
+
+.s3{
+    position: absolute;
+    width : 100%;
+    height: 0%;
+    background : #19307f;
+    left:0;
+    z-index:-3;
+    animation: dropStrip 1.5s linear forwards;
+    animation-delay:1.5s;
+    animation-delay:0.4s; 
+
+}
+
+.lowerPart{
+    position: relative;
+    padding:0;
+    margin:0;
+}
+
+
+.image{
+    position:absolute;
+    top:0%;
+    left:10%; 
+}
+
+.image img{
+    width: 32%;
+    opacity: 0; 
+    /* animation: appear 1s linear forwards;
+    animation-delay: 3.2s; */
+}
+
+
+.image-hider{
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #61b087;
+    position: absolute;
+    /* animation: reveal-image 1.5s cubic-bezier(0.19,1,0.22,1) forwards;
+    animation-delay: 2.8s; */
+}
+
+.otherParts{
+    height:82%;
+    width:100%;
+    top:12%;
+    left:0%;
+    padding:0;
+    margin:0;
+    position:absolute;
+}
+
+.title{
+    color: blanchedalmond;
+    font-size: 5rem;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: rotate(90deg);
+    font-weight : 900;
+    opacity: 0;
+    /* animation: appear 0.0001s linear forwards;
+    animation-delay: 3.9s; */
+}
+
+/* .title-span{
+    opacity: 0;
+} */
+
+
+.title-hider{
+    top:0;
+    left:0%;
+    width:0%;
+    height:100%;
+    background-color:antiquewhite;
+    position:absolute;
+    /* animation: reveal-title 1.5s cubic-bezier(0.19,1,0.22,1) forwards;
+    animation-delay: 3.5s; */
+}
+
+.title span label{
+    color: #000;
+}
+
+.contact{
+    color:blanchedalmond;
+    position: absolute;
+    top: 40%;
+    left:-100px;
+    transform: rotate(90deg);
+    opacity:0; 
+}
+
+.contact ul li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+
+}
+
+.aboutMeTitle{
+    font-size: 3em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:blanchedalmond;
+    position: absolute;
+    left:50%;
+    top:25%;
+    opacity: 0; 
+    /* animation: appear 1.5s linear forwards;
+    animation-delay: 5.5s; */
+}
+
+
+.aboutMeTitleHider{
+    position:absolute;
+    top:0;
+    left:0%;
+    height: 100%;
+    width:0%;
+    background-color: #FF5045;
+    /* animation: reveal-aboutMeTitle 1.5s cubic-bezier(0.19,1,0.22,1) forwards;
+    animation-delay: 5s;*/
+}
+
+.aboutme{
+    text-align: justify;
+    opacity:0;
+    line-height: 2;
+    height: 380px;
+    width: 500px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    color: blanchedalmond;
+    position: absolute;
+    top: 30dvh;
+    left: 50%;
+    font-size: 20px;
+    animation:appear 1.5s linear forwards;
+    animation-delay: 6s;
+}
+.aboutmeHider{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0%;
+    height:0%;
+    width:100%;
+    background-color: #19307f;
+    /* animation: reveal-aboutme 1.75s cubic-bezier(0.19,1,0.22,1);
+    animation-delay:5.6s; */
+}
+
+.project{ 
+    color:blanchedalmond;
+    background-color: black;
+    position: absolute;
+    font-weight: 900;
+    font-size: 2rem;
+    left: 2.5%;
+    top: 90%;
+    border : .5px solid;
+    width: 10%;
+    height: 7%;
+    text-align: center;
+    opacity:0;
+}
+
+.project:hover{
+    background-color: blanchedalmond;
+    color:black;
+}
+
+.contactImageName{
+    position: relative;
+    height: 100%;
+}
+
+
+.project{
+    animation: appear .7s linear forwards;
+    animation-delay: 7s;
+}
+
+@media (max-width:1300px){
+    .project{
+        font-size:1.3rem;
+        height:5%;
+    }
+    .title{
+        top:60%;
+        left:20%;
+    }
+    .contact{
+        left:-120px;
+    }
+    .aboutMeTitle{
+        top:23%;
+    }
+}
+
+@media(min-width:1300px){
+    .project{
+        font-size:2rem;
+        height:10%;
+        width:15%;
+        padding:.1rem;
+        left:2%; 
+        padding-top: 0.5rem;
+    }
+}
+
